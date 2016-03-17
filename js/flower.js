@@ -7,7 +7,7 @@
         });
     };
 
-    var petalRow = 20,//花瓣每一圈的密度，越小越细致 
+    var petalRow = 20,//花瓣每一圈的密度，越小越细致
         petalRowNum = 20,//默认每一花瓣20圈,
         petalNum = 12;// 每朵花  12~15 个花瓣
 
@@ -84,7 +84,8 @@
     function Flower(x, y, ctx) {
         var rnd = {
             getColor: function() {
-                return "rgba(" + this.getRandomNum() + "," + this.getRandomNum() + "," + this.getRandomNum() + ",0.1)";
+                // return "rgba(" + this.getRandomNum() + "," + this.getRandomNum() + "," + this.getRandomNum() + ",0.1)";
+                return "rgba(255," + this.getRandomNum() + "," + this.getRandomNum() + ",0.1)";
             },
             getPetalNum: function() {  //花瓣个数
                 return Math.floor(Math.random() * 3) + petalNum;
