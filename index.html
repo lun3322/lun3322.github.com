@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Flower</title>
+    <style>
+      html,body{height:100%}
+    </style>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
         canvas.height = $canvas.height();
         var ctx = canvas.getContext("2d");
 
-        heart = new Heart(500, 250, 16);
+        heart = new Heart(700, 300, 20);
 
         setTimeout(function(){
           heart.start(ctx);
